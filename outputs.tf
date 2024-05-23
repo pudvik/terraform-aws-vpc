@@ -9,22 +9,27 @@ output "vpc_id" {
   
 }
 
-output "public_subnet" {
+output "public_subnet_ids" {
     value = aws_subnet.public[*].id 
   
 }
 
-output "private_subnet" {
+output "private_subnet_ids" {
     value = aws_subnet.private[*].id 
   
 }
 
-output "database_subnet" {
+output "database_subnet_ids" {
     value = aws_subnet.database[*].id 
   
 }
 
-output "database_subnet_group-ids" {
+output "database_subnet_group-id" {
     value = aws_db_subnet_group.default.id 
+  
+}
+
+output "igw_id" {
+    value = aws_internet_gateway.gw.id
   
 }
