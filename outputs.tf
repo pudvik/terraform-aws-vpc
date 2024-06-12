@@ -35,7 +35,7 @@ output "igw_id" {
 }
 
 
-output "database_subnet_group_name" {
-    value = aws_db_subnet_group.default.name
+output "database-subnet-group-name" {
+    value = aws_db-subnet-group.default.name
   
 }
